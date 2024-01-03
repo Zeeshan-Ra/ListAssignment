@@ -18,7 +18,7 @@ const AddProduct = () => {
         navigate("/")
 
         const userId = JSON.parse(localStorage.getItem('user'))._id;
-        let result = await fetch("http://localhost:5000/add-product", {
+        let result = await fetch("https://list-assignmnet.onrender.com/add-product", {
             method: "post",
             body: JSON.stringify({ name, phone, mail, userId }),
             headers: {
