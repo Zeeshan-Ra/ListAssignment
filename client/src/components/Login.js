@@ -15,7 +15,7 @@ const Login = () => {
     }, [])
 
     const handleLogin = async () => {
-        let result = await fetch("https://list-assignmnet.onrender.com//login", {
+        let result = await fetch("https://list-assignmnet.onrender.com/login", {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {
